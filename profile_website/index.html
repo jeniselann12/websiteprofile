@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenisel Ann Cariñoza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">Jenisel Ann Cariñoza</div>
+        <div class="nav-links">
+            <a href="#home" onclick="showSection('home')">Home</a>
+            <a href="#aboutme" onclick="showSection('aboutme')">About Me</a>
+            <a href="#challenges" onclick="showSection('challenges')">Portfolio</a>
+            <a href="#favorites" onclick="showSection('favorites')">Favorites</a>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="page-section active">
+        <div class="main-content">
+            <div class="content">
+                <h1>Welcome to My Personal Website</h1>
+                <p>" Explore and experience challenges and favorite moments</p>
+				 <p>And your chance to know me more! "</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="aboutme" class="page-section">
+        <div class="main-contents">
+            <div class="info">
+                <h1>JENISEL ANN CARIÑOZA</h1>
+                <p>> A passionate 2nd year Bachelor of Science in Information Technology student of Cebu Technological University- Argao Campus exploring the world of technology and development.</p>
+				<p>> MMO(Mass Media Officer) since 1st year , a humble , dedicated and responsible one.</p>
+           
+			</div>
+            <div class="carousel">
+                <img src="C:\Users\jenis\OneDrive\Desktop\profile_website\404831997_1887620901672248_4199996297408999690_n.jpg" class="carousel-img" style="opacity: 0;">
+                <img src="C:\Users\jenis\OneDrive\Desktop\profile_website\442413994_1990915328009471_7014804054079252027_n.jpg" class="carousel-img" style="opacity: 0;">
+                <img src="C:\Users\jenis\OneDrive\Desktop\profile_website\6287387966347266837.jpg" class="carousel-img" style="opacity: 0;">
+                <img src="C:\Users\jenis\OneDrive\Desktop\profile_website\6287387966347266838.jpg" class="carousel-img" style="opacity: 0;">
+            </div>
+        </div>
+        <div class="contact-box">
+            <h2>Contact Information</h2>
+            <p>📘 Facebook: Jenisel Ann Cariñoza 📱 Phone: 0960 859 3768</p>
+            <p>📷 Instagram: @jenisel.ann 📧 Email: <a href="mailto:jeniselcarinoza@gmail.com">jeniselcarinoza@gmail.com</a></p>
+            <p>🎵 TikTok: @jeniselcarinoza</p>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="challenges" class="page-section">
+        <div class="container">
+            <h1>FUNCTION INTEGRATION</h1>
+            <p>Pick your Choice</p>
+            <ul class="options">
+                <li onclick="temperatureConverter()">1. Temperature Converter (5 pts)</li>
+                <li onclick="getLongerWord()">2. The Longer Word (5 pts)</li>
+                <li onclick="knowMyBirthstone()">3. Know My Birthstone (7 pts)</li>
+                <li onclick="basicOperators()">4. Basic Operators (7 pts)</li>
+                <li onclick="computeAcceleration()">5. Compute for Acceleration (8 pts)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Favorites Section -->
+    <section id="favorites" class="page-section">
+        <div id="content">
+            <h2 id="gallery-header">Abstract Art Gallery</h2>
+            <div id="art-exhibit"></div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

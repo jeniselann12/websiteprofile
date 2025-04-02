@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #C71585, #FFB6C1);
+    min-height: 100vh;
+    color: #E6ECF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Top Bar */
+.top-bar {
+    background: #1C2526;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.top-bar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.top-bar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.top-bar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.top-bar .nav-links a:hover {
+    color: #A3BFFA;
+}
+
+/* Page Sections */
+.page-section {
+    display: none;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.page-section.active {
+    display: block;
+}
+
+/* Home Section */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+    width: 100%;
+}
+.main-contents {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+}
+.content h1 {
+    font-size: 4rem;
+    color: Black;
+}
+
+.content p {
+    font-size: 2rem;
+    color: white;
+	text-align: center;
+	
+}
+
+.about-button {
+    background: #1C2526;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 20px auto;
+    display: block;
+}
+
+.about-button:hover {
+    background: #A3BFFA;
+    color: #1C2526;
+}
+
+/* About Me Section */
+.info {
+    flex: 1;
+    text-align: left;
+    padding: 100px;
+}
+
+.info h1 {
+    font-size: 3.1rem;
+    color:Black;
+}
+.info p {
+    font-size: 1.5rem;
+    color:white;
+}
+
+.carousel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.contact-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 60%;
+    margin: 10px auto;
+    color: black;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.contact-box h2 {
+    color: #ff0080;
+    margin-bottom: 5px;
+}
+
+.contact-box p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Challenges Section */
+.container {
+    background: pink;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 80px auto 0;
+}
+
+.container h1 {
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    background: none;
+    border: 2px solid #008080;
+    color: #008080;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.options li:hover {
+    background: #008080;
+    color: white;
+}
+
+/* Favorites Section */
+#content {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 0 20px 50px;
+}
+
+#gallery-header {
+    text-align: center;
+    color: #ffffff;
+    padding: 30px 0;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#art-exhibit {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.artwork {
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: 3px solid black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.heart1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: gray;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+}
+
+.heart1.liked {
+    background: red;
+}
+
+.comments-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.comment-input {
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.comment-button {
+    padding: 5px 10px;
+    border: none;
+    background: #1C2526;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comments-list {
+    list-style: none;
+    padding: 10px 0 0;
+    text-align: left;
+}
+
+.comments-list li {
+    background: black;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
